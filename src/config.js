@@ -1,5 +1,5 @@
 const config = {
-  WEBSOCKET_URL: "https://webrtc-client-app.azurewebsites.net",
+  WEBSOCKET_URL: "https://webrtc-server-app.azurewebsites.net",
 };
 
 export default config;
