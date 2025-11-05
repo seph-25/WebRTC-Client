@@ -5,18 +5,21 @@ Una aplicación de videoconferencia en tiempo real usando WebRTC y WebSockets.
 ## 🚀 Configuración Inicial
 
 ### Requisitos
-- Node.js 18+ 
+
+- Node.js 18+
 - npm, yarn o pnpm
 
 ### Instalación
 
 1. **Clonar el repositorio**
+
 ```bash
 git clone https://github.com/seph-25/WebRTC-Client.git
 cd WebRTC-Client
 ```
 
 2. **Instalar dependencias**
+
 ```bash
 pnpm install
 # o si usas npm/yarn:
@@ -25,12 +28,14 @@ pnpm install
 ```
 
 3. **Configurar variables de entorno**
+
 ```bash
 # Copiar el archivo de ejemplo
 cp .env.example .env
 ```
 
 4. **Editar `.env` con tus valores**
+
 ```env
 WEBSOCKET_URL=https://tu-servidor-websocket.com
 PORT=3000
@@ -40,6 +45,7 @@ NODE_ENV=development
 ### Ejecución
 
 **Modo Desarrollo**
+
 ```bash
 pnpm start
 ```
@@ -69,11 +75,11 @@ src/
 
 ## 🔧 Variables de Entorno Disponibles
 
-| Variable | Descripción | Valor Defecto |
-|----------|-------------|---------------|
-| `WEBSOCKET_URL` | URL del servidor WebSocket | `ws://localhost:3000` |
-| `PORT` | Puerto del servidor Express | `3000` |
-| `NODE_ENV` | Entorno de ejecución | `development` |
+| Variable        | Descripción                 | Valor Defecto         |
+| --------------- | --------------------------- | --------------------- |
+| `WEBSOCKET_URL` | URL del servidor WebSocket  | `ws://localhost:3000` |
+| `PORT`          | Puerto del servidor Express | `3000`                |
+| `NODE_ENV`      | Entorno de ejecución        | `development`         |
 
 ## 📝 Notas
 
