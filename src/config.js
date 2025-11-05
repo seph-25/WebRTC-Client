@@ -1,5 +1,5 @@
 const config = {
-  WEBSOCKET_URL: "https://simple-video-app-maovares.azurewebsites.net",
+  WEBSOCKET_URL: "https://webrtc-client-app.azurewebsites.net",
 };
 
 export default config;
