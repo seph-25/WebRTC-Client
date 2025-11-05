@@ -1,5 +1,6 @@
 /**
  * Gestiona la conexión y la comunicación con el servidor WebSocket.
+ * Soporta chat y señalización WebRTC.
  */
 export class WebSocketManager {
     constructor(url) {
@@ -11,9 +12,6 @@ export class WebSocketManager {
         this.messageQueue = [];
     }
 
-    /**
-     * Inicializa los manejadores de eventos del WebSocket y establece la conexión.
-     */
     connect() {
         this.ws = new WebSocket(this.url);
 
@@ -45,11 +43,6 @@ export class WebSocketManager {
         };
     }
 
-    /**
-     * Registra un callback para un tipo de mensaje específico.
-     * @param {string} messageType - El tipo de mensaje (ej. 'user-joined').
-     * @param {function} handler - La función que manejará el mensaje.
-     */
     onMessage(messageType, handler) {
         this.messageHandlers.set(messageType, handler);
     }
